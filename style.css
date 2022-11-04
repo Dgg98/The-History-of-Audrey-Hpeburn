@@ -1,3 +1,47 @@
-h1 {
-    color: red;
+
+.hero {
 }
+
+
+
+
+.navbar {
+    padding: 1.5em;
+    bottom: 100px;
+    z-index:1;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgba(245, 239, 230, 1);
+    padding: 3em;
+  }
+
+  .header h1 {
+    background: rgba(255,255,255,.7);
+    padding: 1em;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    margin: 0;
+    color: rgba(30, 29, 29, 1);
+    font-family: sans-serif;
+  }
+
+  .logo {
+    position: absolute;
+    bottom: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
