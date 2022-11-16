@@ -2,6 +2,8 @@
   width: 1185px;
 }
 
+
+
 .navbar {
     padding: 1.5em;
     z-index:1;
@@ -22,6 +24,7 @@
     padding: 3em;
     text-transform: uppercase;
   }
+
 
 
   .hero {
@@ -55,32 +58,61 @@
 
 .about {
   width: 1185px;
+  height: 115vh;
   padding: 120px;
   display: flex;
   justify-content: center;
   gap: 10em;
   background: rgba(245,239,230,.7);
+  background-image: url(images/ABOUT.png);
+  background-repeat: no-repeat;
+  background-position: bottom 75px right 35px;
 }
 
+
+
 .gif {
-  width: 100%;
+  background: url(images/gif-animation.gif);
+justify-content: center;
+height: 73vh;
 }
+
+
+h2 {
+  color: #F6F4EF;
+  position: absolute;
+  padding-top: 400px;
+  padding-left: 920px;
+}
+
 
 
 .films {
   width: 1185px;
-  display: flex;
   padding: 120px;
   background: rgba(245,239,230,.7);
-height: 98vh;
+  background-image: url(images/FILMS.png);
+  background-repeat: no-repeat;
+  background-position: bottom 250px right 35px;
+  height: 150vh;
+}
+
+.films-text {
+padding-top: 400px;
+text-align: center;
 }
 
 
-.card {
+
+.movies {
+display: flex;
 width: 100%;
 justify-content: center;
 margin: 1em;
+padding-top: 100px;
+gap: 80px;
 }
+
 
 .charity {
   text-align: right;
@@ -89,10 +121,9 @@ margin: 1em;
 }
 
 
-.charity .content {
+.content {
 position: absolute;
-top: 3900px;
-right: 0%;
+right: 0;
 width: 40%;
 background: rgba(116, 106, 92, 1);
 color: #F6F4EF;
@@ -114,6 +145,23 @@ h3 {
   height: 65vh;
 }
 
+.donate-text {
+  text-align: center;
+padding: 160px;
+}
+
+.btn {
+  display: inline-block;
+  background: #374747;
+  color: #F5EFE6;
+  padding: .8rem 1.8rem;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
 .fashion {
   margin: 7px;
   padding: 120px;
@@ -122,6 +170,10 @@ h3 {
   gap: 25em;
   background: rgba(245,239,230,.7);
   width: 1185px;
+  height: 200vh;
+  background-image: url(images/FASHION.png);
+  background-repeat: no-repeat;
+  background-position: bottom 530px right 35px;
 }
 
 .fashion .first-image {
@@ -131,25 +183,16 @@ h3 {
 
 .fashion .second-image {
   position: absolute;
-  top: 4955px;
+  padding-top: 110px;
   right: 540px;
 }
 
-.card-content {
-  bottom: 30px auto;
-}
+
 
 h1 {
   background: rgba(116, 106, 92, 1);
 }
 
-h2 {
-  position: absolute;
-  color: rgba(246, 244, 239, 1);
-  right: 50px;
-  margin: 0;
-  top: 2170px;
-}
 
 
 
