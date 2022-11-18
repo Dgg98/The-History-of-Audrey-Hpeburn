@@ -35,7 +35,7 @@
   }
 
   .ptext {
-    background: rgba(255,255,255,.7);
+    background: rgba(255, 255, 255, 40%);
     font-size: 30px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -48,7 +48,6 @@
 
   .logo {
     position: absolute;
-    top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,6 +66,14 @@
   background-image: url(images/ABOUT.png);
   background-repeat: no-repeat;
   background-position: bottom 75px right 35px;
+}
+
+h1 {
+  position: absolute;
+  padding: 20px;
+  background: rgba(116, 106, 92, 30%);
+  width: 50%;
+  left: 0;
 }
 
 
@@ -114,30 +121,106 @@ gap: 80px;
 }
 
 
-.charity {
-  text-align: right;
-  background: url(images/charity-image.jpg);
-  height: 150vh;
+
+
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 130vh;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 120%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  top: 630px;
+  right: 0;
+  width: 45%;
+  background: rgba(116, 106, 92, 70%);
+  color: #F6F4EF;
+  padding: 5em;
+}
+
+.slide .content h3 {
+  margin-bottom: 9px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  /* transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s; */
 }
 
 
-.content {
-position: absolute;
-right: 0;
-width: 40%;
-background: rgba(116, 106, 92, 1);
-color: #F6F4EF;
-padding: 3em;
+.buttons button#next {
+  position: absolute;
+  right: 30px;
+  top: 4250px;
 }
 
-.charity .content h3 {
-  margin-bottom: 10px;
+.buttons button#prev {
+  position: absolute;
+  left: 30px;
+  top: 4250px;
+}
+
+.buttons button {
+  border: 2px solid #374747;
+  background-color: #374747;
+  color: #F5EFE6;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: white;
+}
+
+.buttons button:hover {
+  background-color: rgba(255,255,255,.8);
+  color: transparent;
+}
+
+@media(max-width: 500px) {
+  .slide .content {
+    bottom: 0x;
+    left: 0;
+    width: 100%;
+  }  
+  
+  .slide.current .content {
+    transform: translateY(-300px);
+  } 
+}
+
+.slide:first-child {
+  background: url("images/charity-image.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url("images/audrey-charity.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url("images/audrey-award.jpg") no-repeat center center/cover;
 }
 
 
-h3 {
-  opacity: 100%;
-}
+
+
+
 
 
 .donate {
@@ -151,6 +234,7 @@ padding: 160px;
 }
 
 .btn {
+  text-decoration: none;
   display: inline-block;
   background: #374747;
   color: #F5EFE6;
@@ -187,11 +271,23 @@ padding: 160px;
   right: 540px;
 }
 
-
-
-h1 {
-  background: rgba(116, 106, 92, 1);
+.footer {
+  background-color: #746A5C;
+  height: 40vh;
+  display: flex;
 }
+
+.last-logo {
+  align-items: center;
+}
+
+.text-last {
+  color: #F6F4EF;
+  padding: 40px;
+}
+
+
+
 
 
 
