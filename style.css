@@ -4,7 +4,6 @@
 }
 
 
-
 .navbar {
     padding: 1.5em;
     z-index:1;
@@ -70,19 +69,20 @@
 
 
 .card {
+  padding-top: 9px;
   display: flex;
-  gap: 8em;
+  gap: 5em;
 }
 
 .about-content {
-  padding-top: 200px;
-  padding-left: 70px;
+  padding-top: 120px;
+  padding-left: 50px;
   text-align: justify;
 }
 
 .about .first-image {
   position: relative;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-right: 170px;
 }
 
@@ -107,6 +107,8 @@ h1 {
 
 .gif {
   background: url(images/gif-animation.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 justify-content: center;
 height: 73vh;
 }
@@ -125,23 +127,26 @@ h2 {
   background: rgba(245,239,230,.7);
   background-image: url(images/FILMS.png);
   background-repeat: no-repeat;
-  background-position: bottom 200px right 35px;
-  height: 150vh;
+  background-position: bottom 340px right 35px;
+  height: 200vh;
 }
 
-.films-text {
-padding-top: 350px;
-text-align: center;
+.film-heading {
+  padding-top: 80px;
 }
+
 
 .movies {
 display: flex;
 justify-content: center;
-padding-top: 200px;
+padding-top: 180px;
 }
 
-
-
+.quote {
+  background: white;
+  text-align: center;
+  height: 10vh;
+  }
 
 
 
@@ -167,16 +172,18 @@ padding-top: 200px;
 
 .slide .content {
   position: absolute;
-  top: 630px;
+  top: 695px;
   right: 0;
   width: 45%;
   background: rgba(116, 106, 92, 70%);
   color: #F6F4EF;
-  padding: 5em;
+  padding: 2em;
+  padding-left: 50px;
+
 }
 
 .slide .content h3 {
-  margin-bottom: px;
+  margin-bottom: 3px;
 }
 
 .slide.current .content {
@@ -189,13 +196,14 @@ padding-top: 200px;
 .buttons button#next {
   position: absolute;
   right: 30px;
-  top: 4250px;
+  top: 4475px;
+
 }
 
 .buttons button#prev {
   position: absolute;
   left: 30px;
-  top: 4250px;
+  top: 4475px;
 }
 
 .buttons button {
@@ -245,6 +253,8 @@ padding-top: 200px;
 
 .donate {
   background: url(images/donate-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 65vh;
   margin-top: 150px;
 }
@@ -271,31 +281,56 @@ padding: 160px;
 
 
 .fashion {
-  padding: 120px;
-  display: flex;
-  justify-content: center;
-  gap: 25em;
-  background: rgba(245,239,230,.7);
-  width: 1185px;
-  height: 200vh;
+  height: 170vh;
   background-image: url(images/FASHION.png);
   background-repeat: no-repeat;
-  background-position: bottom 530px right 35px;
+  background-position: bottom 50px right 35px;
+}
+
+.fashion-heading {
+  padding-top: 100px;
+}
+
+.fashion-content {
+  justify-content: center;
+  display: flex;
+  gap: 20em;
+  text-align: justify;
+}
+
+.fashion-text {
+  padding-top: 100px;
+  padding-right: 55px;
 }
 
 .fashion .first-image {
   position: relative;
-  left: 0;
+  padding-left: 80px;
+  padding-top: 10px;
 }
 
 .fashion .second-image {
   position: absolute;
-  padding-top: 110px;
-  right: 540px;
+  padding-top: 120px;
+  right: 590px;
+}
+
+h5 {
+  position: absolute;
+  padding: 10px;
+  background: rgba(116, 106, 92, 30%);
+  width: 36%;
+  right: 0;
 }
 
 
+.suscribe {
+height: 100vh;
+}
 
+.suscribe-heading {
+padding-top: 130px;
+}
 
 h4 {
   position: absolute;
@@ -306,19 +341,18 @@ h4 {
 
 .footer {
   background-color: #746A5C;
-  height: 40vh;
+  height: 35vh;
   display: flex;
 }
 
 .last-logo {
   position: relative;
-  left: 1000px;
-  bottom: 20px;
+  padding-left: 1050px;
+  padding-bottom: 50px;
 }
 
 .text-last {
   color: black;
-  padding: 40px;
   position: relative;
   left: 1050px;
 }
