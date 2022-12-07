@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap');
+
+
 .container {
   width: 100%;
   background: rgba(245,239,230,.7);
@@ -5,7 +8,8 @@
 
 
 .navbar {
-    padding: 1.5em;
+  padding-top: 2.8em;
+  padding-left: 500px;
     z-index:1;
   }
 
@@ -22,6 +26,7 @@
     text-decoration: none;
     color: rgba(245, 239, 230, 1);
     padding: 3em;
+    font-family: Dm Sans;
     text-transform: uppercase;
   }
 
@@ -34,23 +39,31 @@
     background-size: cover;
   }
 
-  .ptext {
-    background: rgba(255, 255, 255, 40%);
-    font-size: 30px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    bottom: 180px;
-    right: 5px;
-    position: absolute;
-    padding: 1em;
+
+  .header {
+    padding-top: 250px;
   }
 
+  .ptext {
+    background: rgba(255, 255, 255, 40%);
+    font-family: DM Serif Display;
+    font-size: 80px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    position: absolute;
+    width: 30%;
+    padding-left: 100px;
+    right: 0;
+  }
+
+.ptext span {
+  position: relative;
+  top: -25px
+}
 
   .logo {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
   }
 
  
@@ -71,10 +84,12 @@
 .card {
   padding-top: 9px;
   display: flex;
-  gap: 5em;
+  gap: 10em;
 }
 
 .about-content {
+  font-family: Dm Sans;
+  font-size: 19px;
   padding-top: 120px;
   padding-left: 50px;
   text-align: justify;
@@ -96,9 +111,12 @@
 
 h1 {
   position: absolute;
-  padding: 10px;
+  font-family: DM Serif Display;
+  font-size: 60px;
+  text-transform: uppercase;
+  padding-left: 50px;
   background: rgba(116, 106, 92, 30%);
-  width: 38%;
+  width: 39%;
   left: 8px;
 }
 
@@ -114,46 +132,61 @@ height: 73vh;
 }
 
 h2 {
+  font-family: Alata;
+  font-size: 25px;
   color: #F6F4EF;
   position: absolute;
-  padding-top: 400px;
-  padding-left: 920px;
+  padding-top: 380px;
+  padding-left: 850px;
 }
 
 
 
 
 .films {
-  background: rgba(245,239,230,.7);
   background-image: url(images/FILMS.png);
   background-repeat: no-repeat;
-  background-position: bottom 340px right 35px;
-  height: 200vh;
+  background-position: bottom 15px right 35px;
+  height: 160vh;
 }
 
 .film-heading {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 
 .movies {
 display: flex;
 justify-content: center;
-padding-top: 180px;
+padding-top: 230px;
+gap: 5rem;
 }
 
+.film-card {
+  font-family: Alata;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+
 .quote {
-  background: white;
   text-align: center;
-  height: 10vh;
+  font-family: Alata;
+  font-size: 60px;
+  height: 60vh;
+  padding-top: 100px;
   }
+
+
 
 
 
 .slider {
   position: relative;
   overflow: hidden;
-  height: 130vh;
+  height: 150vh;
   width: 100%;
 }
 
@@ -161,30 +194,40 @@ padding-top: 180px;
   position: absolute;
   right: 0;
   width: 100%;
-  height: 120%;
+  height: 130%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
 
 .slide.current {
-  opacity: 1;
+  opacity: 3;
 }
 
 .slide .content {
+  height: 35vh;
+  font-family: DM Sans;
+  font-size: 19px;
   position: absolute;
-  top: 695px;
+  top: 690px;
   right: 0;
   width: 45%;
   background: rgba(116, 106, 92, 70%);
   color: #F6F4EF;
-  padding: 2em;
-  padding-left: 50px;
-
+  padding-left: 40px;
 }
 
-.slide .content h3 {
-  margin-bottom: 3px;
+.content-text {
+  padding-top: 88px;
 }
+
+h3 {
+  font-family: DM Serif Display;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 89px;
+  font-size: 60px;
+}
+
 
 .slide.current .content {
   opacity: 1;
@@ -193,17 +236,18 @@ padding-top: 180px;
 }
 
 
+
 .buttons button#next {
   position: absolute;
   right: 30px;
-  top: 4475px;
+  top: 4655px;
 
 }
 
 .buttons button#prev {
   position: absolute;
   left: 30px;
-  top: 4475px;
+  top: 4655px;
 }
 
 .buttons button {
@@ -255,22 +299,27 @@ padding-top: 180px;
   background: url(images/donate-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 40px;
   height: 65vh;
-  margin-top: 150px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .donate-text {
   text-align: center;
-padding: 160px;
+  padding-top: 100px;
 }
 
 .btn {
   text-decoration: none;
+  font-size: 20px;
   display: inline-block;
   background: #374747;
   color: #F5EFE6;
   padding: .8rem 1.8rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .btn:hover {
@@ -281,60 +330,68 @@ padding: 160px;
 
 
 .fashion {
-  height: 170vh;
+  height: 155vh;
   background-image: url(images/FASHION.png);
   background-repeat: no-repeat;
-  background-position: bottom 50px right 35px;
+  background-position: bottom 45px right 35px;
+}
+
+h5 {
+  font-family: DM Serif Display;
+  font-size: 60px;
+  text-transform: uppercase;
+  position: absolute;
+  padding-left: 100px;
+  background: rgba(116, 106, 92, 30%);
+  width: 31.5%;
+  right: 0;
 }
 
 .fashion-heading {
-  padding-top: 100px;
+  padding-top: 28px;
 }
 
 .fashion-content {
   justify-content: center;
   display: flex;
-  gap: 20em;
+  gap: 12em;
   text-align: justify;
 }
 
 .fashion-text {
-  padding-top: 100px;
-  padding-right: 55px;
+  font-family: Dm Sans;
+  font-size: 19px;
+  padding-top: 230px;
+  padding-right: 40px;
 }
 
 .fashion .first-image {
   position: relative;
-  padding-left: 80px;
-  padding-top: 10px;
+  left: 60px;
+  top: 0;
 }
 
 .fashion .second-image {
   position: absolute;
-  padding-top: 120px;
-  right: 590px;
+  padding-top: 130px;
+  right: 620px;
 }
 
-h5 {
-  position: absolute;
-  padding: 10px;
-  background: rgba(116, 106, 92, 30%);
-  width: 36%;
-  right: 0;
-}
+
 
 
 .suscribe {
+  background: white;
 height: 100vh;
 }
 
 .suscribe-heading {
-padding-top: 130px;
+  justify-items: center;
 }
 
 h4 {
-  position: absolute;
-  right: 50%;
+  font-family: DM Serif Display;
+  font-size: 60px;
 }
 
 
@@ -346,15 +403,21 @@ h4 {
 }
 
 .last-logo {
-  position: relative;
-  padding-left: 1050px;
-  padding-bottom: 50px;
+position: absolute;
+right: 10px;
+padding-top: 5px;
 }
 
 .text-last {
-  color: black;
   position: relative;
   left: 1050px;
+}
+
+h6 {
+  font-family: DM Sans;
+  color: #F6F4EF;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 
