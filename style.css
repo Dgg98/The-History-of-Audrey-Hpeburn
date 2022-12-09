@@ -487,13 +487,13 @@ fot li {
   display: flex;
   gap: 3em;
   justify-content: center;
-  bottom: 60px;
+  bottom: 290px;
 }
 
 .copyright {
   position: relative;
   text-align: center;
-  bottom: 50px;
+  bottom: 270px;
 }
 
 h4 {
@@ -504,7 +504,7 @@ h4 {
 .last-logo {
 position: absolute;
 right: 20px;
-top: 7430px;
+top: 7400px;
 }
 
 
