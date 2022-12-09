@@ -203,14 +203,26 @@ gap: 5rem;
 
 
 
-.quote {
-  text-align: center;
-  font-family: Alata;
-  font-size: 60px;
-  height: 60vh;
-  padding-top: 100px;
-  }
 
+h6 {
+  font-family: Alata;
+  font-size: 70px;
+text-align: center;
+}
+
+
+#content {
+  position: relative;
+  animation-name: content;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content {
+  0%{left: -1000px; opacity: 0;}
+  50%{opacity: 0;}
+  100%{left: 0; opacity: 1;}
+}
 
 
 
@@ -242,10 +254,11 @@ gap: 5rem;
   position: absolute;
   top: 690px;
   padding-right: 3px;  
-  width: 50%;
+  width: 45%;
   background: rgba(116, 106, 92, 70%);
   color: #F6F4EF;
   padding-left: 20px;
+  padding-right: 20px;
   text-align: justify;
 }
 
@@ -257,7 +270,7 @@ h3 {
   font-family: DM Serif Display;
   text-transform: uppercase;
   position: absolute;
-  bottom: 89px;
+  bottom: 90px;
   font-size: 60px;
 }
 
@@ -273,14 +286,14 @@ h3 {
 .buttons button#next {
   position: absolute;
   right: 30px;
-  top: 4655px;
+  top: 4650px;
 
 }
 
 .buttons button#prev {
   position: absolute;
   left: 30px;
-  top: 4655px;
+  top: 4650px;
 }
 
 .buttons button {
@@ -327,7 +340,6 @@ h3 {
 
 
 
-
 .donate {
   background: url(images/donate-image.jpg);
   background-repeat: no-repeat;
@@ -338,6 +350,7 @@ h3 {
   height: 65vh;
   margin-top: 200px;
   margin-bottom: 200px;
+
 }
 
 .donate-text {
@@ -363,10 +376,10 @@ h3 {
 
 
 .fashion {
-  height: 155vh;
+  height: 185vh;
   background-image: url(images/FASHION.png);
   background-repeat: no-repeat;
-  background-position: bottom 45px right 35px;
+  background-position: bottom 240px right 35px;
 }
 
 .title-third {
@@ -374,18 +387,20 @@ h3 {
   font-family: DM Serif Display;
   font-size: 80px;
   text-transform: uppercase;
-  padding-left: 50px;
   background: rgba(116, 106, 92, 30%);
   width: 39%;
+  padding-left: 30px;
+  bottom: 785px;
   height: 38%;
   right: 0;
 }
 
-.text-third {
+.style {
   position: absolute;
   padding-top: 100px;
-  width: 98%;
+  width: 96%;
   height: 20%;
+  right: 0;
 }
 
 .title-third span {
@@ -394,27 +409,22 @@ h3 {
 }
 
 
-.fashion-heading {
-  padding-top: 28px;
-}
-
 .fashion-content {
-  justify-content: center;
   display: flex;
-  gap: 10em;
   text-align: justify;
+  gap: 23em;
 }
 
 .fashion-text {
   font-family: Dm Sans;
   font-size: 19px;
   padding-top: 230px;
-  padding-right: 40px;
+  padding-right: 50px;
 }
 
 .fashion .first-image {
   position: relative;
-  left: 60px;
+  left: 50px;
   top: 0;
 }
 
@@ -427,45 +437,80 @@ h3 {
 
 
 
-.suscribe {
-  background: white;
-height: 100vh;
-}
-
-.suscribe-heading {
-  justify-items: center;
-}
-
-h4 {
-  font-family: DM Serif Display;
-  font-size: 60px;
-}
 
 
 
 .footer {
   background-color: #746A5C;
-  height: 35vh;
+}
+
+
+.last {
+  position: relative;
+  justify-content: center;
+  bottom: 160px;
+}
+
+form{
+  width: 150px;
+  background: white;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.email {
+  border: none;
+}
+
+h1 {
+  font-family: DM Serif Display;
+  font-size: 70px;
+  text-align: center;
+}
+
+
+ fot a {
+  text-decoration: none;
+  color: rgba(245, 239, 230, 1);
+  font-family: Dm Sans;
+  text-transform: uppercase;
+}
+
+fot li {
+  list-style-type: none;
+  padding: .5em;
+}
+
+
+.social {
+  position: relative;
   display: flex;
+  gap: 3em;
+  justify-content: center;
+  bottom: 60px;
+}
+
+.copyright {
+  position: relative;
+  text-align: center;
+  bottom: 50px;
+}
+
+h4 {
+  font-family: Alata;
+  color: rgba(245, 239, 230, 1);
 }
 
 .last-logo {
 position: absolute;
-right: 10px;
-padding-top: 5px;
+right: 20px;
+top: 7430px;
 }
 
-.text-last {
-  position: relative;
-  left: 1050px;
-}
 
-h6 {
-  font-family: DM Sans;
-  color: #F6F4EF;
-  text-transform: uppercase;
-  font-size: 13px;
-}
+
+
+
 
 
 
