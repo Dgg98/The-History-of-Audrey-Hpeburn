@@ -202,8 +202,6 @@ gap: 5rem;
 
 
 
-
-
 h6 {
   font-family: Alata;
   font-size: 70px;
@@ -214,7 +212,7 @@ text-align: center;
 #content {
   position: relative;
   animation-name: content;
-  animation-duration: 7s;
+  animation-duration: 18s;
   animation-fill-mode: forwards;
 }
 
@@ -252,7 +250,8 @@ text-align: center;
   font-family: DM Sans;
   font-size: 19px;
   position: absolute;
-  top: 690px;
+  left: 745px;
+  top: 740px;
   padding-right: 3px;  
   width: 45%;
   background: rgba(116, 106, 92, 70%);
@@ -286,14 +285,14 @@ h3 {
 .buttons button#next {
   position: absolute;
   right: 30px;
-  top: 4650px;
+  top: 4780px;
 
 }
 
 .buttons button#prev {
   position: absolute;
   left: 30px;
-  top: 4650px;
+  top: 4780px;
 }
 
 .buttons button {
@@ -459,7 +458,7 @@ form{
   background: white;
   margin: 0 auto;
   padding: 15px;
-  right: 80px;
+  right: 75px;
 }
 
 .email {
@@ -468,7 +467,7 @@ form{
 
 .btn-last {
   position: relative;
-  left: 730px;
+  left: 720px;
   bottom: 67px;
   text-decoration: none;
   font-size: 20px;
@@ -531,7 +530,7 @@ h4 {
 .last-logo {
 position: absolute;
 right: 20px;
-top: 7430px;
+top: 7600px;
 }
 
 
